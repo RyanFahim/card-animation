@@ -8,15 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Card Animation</title>
+    <script type="text/javascript" src="./index.JS"></script>
 </head>
 
+
 <body>
-    <!-- <div class="card-swiper"> -->
+
+
+   
+    <div class="card-swiper">
 
         <div class="card-groups">
-    
-            <div class="card-group">
-    
+
+            <div class="card-group" data-index="0" data-status="active">
+
                 <div class="small-card card"></div>
                 <div class="big-card card"></div>
                 <div class="small-card card"></div>
@@ -25,10 +30,10 @@
                 <div class="big-card card"></div>
                 <div class="small-card card"></div>
                 <div class="big-card card"></div>
-    
+
             </div>
-            <div class="card-group">
-    
+            <div class="card-group" data-index="1" data-status="unknown">
+
                 <div class="small-card card"></div>
                 <div class="big-card card"></div>
                 <div class="small-card card"></div>
@@ -37,10 +42,10 @@
                 <div class="big-card card"></div>
                 <div class="small-card card"></div>
                 <div class="big-card card"></div>
-    
+
             </div>
-            <div class="card-group">
-    
+            <div class="card-group" data-index="2" data-status="unknown">
+
                 <div class="small-card card"></div>
                 <div class="big-card card"></div>
                 <div class="small-card card"></div>
@@ -49,17 +54,21 @@
                 <div class="big-card card"></div>
                 <div class="small-card card"></div>
                 <div class="big-card card"></div>
-    
+
             </div>
-    
+
         </div>
 
         <div class="card-swiper-buttons">
-           <button><i class="uil uil-x"></i></button>
-           <button> <i class="uil uil-heart"></i></button>
-           
+            <button id="hate-button" onclick="handleHateClick()"> <i class="fa-solid fa-x"></i> </button>
+            <button id="love-button" type="button" onclick="handleLoveClick()"> <i class="fa-solid fa-heart"> </button>
+
         </div>
-    <!-- </div> -->
+
+    </div>
+    <a class="inspire-button" href="https://kippo.com/" target="_blank"  >Inspired from <span>Kippo</span></a>
+
+
 </body>
 
 </html>
